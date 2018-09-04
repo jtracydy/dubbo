@@ -16,7 +16,7 @@
     <dubbo:reference id="demoService" interface="com.dubbo.api.test.Demo2Service" />
 
 
-    <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
+    <!-- 生成远程服务代理，可以和本地bean一样使用checkService-->
     <dubbo:reference id="loginService" interface="com.dubbo.api.test.LoginService"/>
 
     <dubbo:reference id = "checkService" interface="com.dubbo.api.test.CheckService"/>
