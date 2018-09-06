@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo-domain/dubbo-domain.iml" filepath="$PROJECT_DIR$/dubbo-domain/dubbo-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-service/dubbo-service.iml" filepath="$PROJECT_DIR$/dubbo-service/dubbo-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-spring/dubbo-spring.iml" filepath="$PROJECT_DIR$/dubbo-spring/dubbo-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-test/dubbo-test.iml" filepath="$PROJECT_DIR$/dubbo-test/dubbo-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-test-es/dubbo-test-es.iml" filepath="$PROJECT_DIR$/dubbo-test-es/dubbo-test-es.iml" />
     </modules>
