@@ -11,8 +11,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 @Documented
-public @interface Msg {
+public @interface Demo {
 
-    String msg() default "msg";
+    String demo() default "demo";
 }
-
