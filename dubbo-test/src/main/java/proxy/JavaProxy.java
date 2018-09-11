@@ -1,5 +1,7 @@
 package proxy;
 
+import com.google.common.collect.Lists;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -33,6 +35,9 @@ public class JavaProxy implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("before,,,,,");
+
+        Method[] methods = proxy.getClass().getDeclaredMethods();
+        Lists.newArrayList(methods).forEach(mm -> System.out.println(mm.getName()));
 
         System.out.println(proxyObj.getClass().getName());
         System.out.println(proxy.getClass().getName());

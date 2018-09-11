@@ -16,6 +16,11 @@ public class ProxyDynamic implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+
+        System.out.println(proxy.getClass().getName());
+        System.out.println(proxy.getClass().getSuperclass());
+
+
         System.out.println("before.....");
         System.out.println("className:" + obj.getClass().getName());
         System.out.println("method:" + method);

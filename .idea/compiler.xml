@@ -31,7 +31,7 @@
       <module name="dubbo-service" target="1.5" />
       <module name="dubbo-spring" target="1.6" />
       <module name="dubbo-test" target="1.8" />
-      <module name="dubbo-test-es" target="1.5" />
+      <module name="dubbo-test-es" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
