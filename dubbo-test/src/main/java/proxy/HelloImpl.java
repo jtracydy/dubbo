@@ -11,4 +11,9 @@ public class HelloImpl implements Hello{
     public void sayBybye() {
         System.out.println("bybybybybybybyyb");
     }
+
+    @Override
+    public String getStr() {
+        return "invoke hello....";
+    }
 }

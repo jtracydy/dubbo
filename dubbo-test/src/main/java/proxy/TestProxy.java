@@ -18,6 +18,7 @@ public class TestProxy {
         Hello h1 = new HelloImpl();
         JavaProxy javaProxy = new JavaProxy();
         Hello hh =javaProxy.getProxyObj(h1);
-        hh.sayBybye();
+        System.out.println(hh.getClass().getName());
+        hh.getStr();
     }
 }
