@@ -39,7 +39,7 @@ public class Demo01 {
 
         ImmutableSet<Color> imColorSet =
                 ImmutableSet.<Color>builder()
-                        .add(new Color(0, 255, 255))
+                        .add(new Color(255, 60, 139))
                         .add(new Color(0, 191, 255))
                         .build();
 

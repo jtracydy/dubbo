@@ -1,4 +1,4 @@
-package com.dubbo.spr.annotation;
+package annotation;
 
 
 @MyComponent
