@@ -1,8 +1,6 @@
-package proxy;
+package proxy.jadynamic;
 
 import org.junit.Test;
-
-import java.lang.reflect.Proxy;
 
 public class TestProxy {
 

@@ -1,4 +1,4 @@
-package proxy;
+package proxy.jadynamic;
 
 public class HelloImpl implements Hello{
 

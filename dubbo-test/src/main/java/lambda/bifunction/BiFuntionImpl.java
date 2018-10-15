@@ -6,6 +6,8 @@ public class BiFuntionImpl<T, U, R> implements BiFunction<T, U, R>{
 
     @Override
     public R apply(T t, U u) {
-        return null;
+        String s1 = (String)t;
+        String s2 = (String)u;
+        return (R)s1.concat(s2);
     }
 }

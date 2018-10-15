@@ -1,0 +1,48 @@
+package proxy.testjavadynamic;
+
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+
+import java.util.Map;
+
+public class CoffeFactory {
+
+    public static final Map<String,CoffeeEntity> coffeeType;
+
+    static {
+        coffeeType = Maps.newHashMap();
+
+        /**
+         * 拿铁
+         */
+        CoffeeEntity latte = new CoffeeEntity();
+        latte.setName(TypeEnum.LATTE.name());
+        CoffeeEntity.CoffeeParams c1 = latte.new CoffeeParams("15","tall");
+        CoffeeEntity.CoffeeParams c2 = latte.new CoffeeParams("20","grande");
+        CoffeeEntity.CoffeeParams c3 = latte.new CoffeeParams("25","venti");
+        latte.setCoffeeParams(Lists.newArrayList(c1,c2,c3));
+        coffeeType.put(TypeEnum.LATTE.name(),latte);
+
+        /**
+         * 摩卡
+         */
+        CoffeeEntity mocha = new CoffeeEntity();
+        mocha.setName(TypeEnum.MOCHA.name());
+        CoffeeEntity.CoffeeParams c4 = latte.new CoffeeParams("16","tall");
+        CoffeeEntity.CoffeeParams c5 = latte.new CoffeeParams("21","grande");
+        CoffeeEntity.CoffeeParams c6 = latte.new CoffeeParams("26","venti");
+        mocha.setCoffeeParams(Lists.newArrayList(c4,c5,c6));
+
+        /**
+         * 美式
+         */
+        CoffeeEntity american = new CoffeeEntity();
+        mocha.setName(TypeEnum.MOCHA.name());
+        CoffeeEntity.CoffeeParams c7 = american.new CoffeeParams("18","tall");
+        CoffeeEntity.CoffeeParams c8 = american.new CoffeeParams("23","grande");
+        CoffeeEntity.CoffeeParams c9 = american.new CoffeeParams("28","venti");
+        mocha.setCoffeeParams(Lists.newArrayList(c7,c8,c9));
+
+
+    }
+}

@@ -1,4 +1,4 @@
-package proxy;
+package proxy.jadynamic;
 
 //import com.google.common.collect.Lists;
 
