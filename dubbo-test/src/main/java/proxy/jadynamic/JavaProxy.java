@@ -14,7 +14,7 @@ public class JavaProxy implements InvocationHandler {
     private Object proxyObj;
 
     /**
-     * Proxy 动态代理类动态创建代理对象
+     * ProxyDynamic 动态代理类动态创建代理对象
      * newProxyInstance() ->创建代理对象
      *
      * 仅仅提供一个代理类的入口，创建一个继承Proxy，实现被代理的类的所有接口，

@@ -3,6 +3,10 @@ package proxy.testjavadynamic;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 
+/**
+ * 咖啡 name 和code的关系
+ */
+
 public enum TypeEnum {
 
     LATTE(1,"拿铁"),
@@ -38,11 +42,12 @@ public enum TypeEnum {
         return desc;
     }
 
-    public Integer getCodeByName(String name){
+    public static Integer getCodeByName(String name){
         return typeMap.inverse().get(name);
     }
 
-    public String getCodeByCode(Integer code){
+    public static String getCodeByCode(Integer code){
         return typeMap.get(code);
     }
+
 }

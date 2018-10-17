@@ -10,7 +10,7 @@ public class TestProxy {
 //        Hello h = new HelloImpl();
 //        ProxyUtils proxyUtils = new ProxyUtils(h);
 //
-//        Hello hello = (Hello)Proxy.newProxyInstance(h.getClass().getClassLoader(),h.getClass().getInterfaces(),proxyUtils);
+//        Hello hello = (Hello)ProxyDynamic.newProxyInstance(h.getClass().getClassLoader(),h.getClass().getInterfaces(),proxyUtils);
 //        hello.sayHello();
 
         Hello h1 = new HelloImpl();
