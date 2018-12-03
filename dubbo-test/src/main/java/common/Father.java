@@ -1,4 +1,4 @@
 package common;
 
-public class Father  {
+public class Father  extends Grandpa{
 }
