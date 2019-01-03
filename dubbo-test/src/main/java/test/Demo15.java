@@ -8,7 +8,7 @@ import com.google.common.collect.Maps;
 import java.util.Map;
 
 /**
- * test biMap
+ * Test biMap
  */
 public class Demo15 {
 

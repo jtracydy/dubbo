@@ -26,5 +26,6 @@ public class Demo26 {
         String str = StringUtils.join(list, DEFAULT_SEPARATOR);
         System.out.println(str);
 
+
     }
 }
