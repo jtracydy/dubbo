@@ -22,7 +22,7 @@ public class Demo31 {
         Date now = DateTime.parse(DateFormatUtils.format(new Date(), plat)).toDate();
         Date from = DateUtils.addDays(now, -8);
 
-        Date END_DATE = DateTime.parse("2018-12-31").toDate();
+        Date END_DATE = DateTime.parse("2019-01-08").toDate();
 
         if (END_DATE.after(from) && END_DATE.before(now)) {
             System.out.println(END_DATE);
