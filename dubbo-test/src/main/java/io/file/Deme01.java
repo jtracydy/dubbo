@@ -25,7 +25,7 @@ public class Deme01 {
     }
 
 
-    public static void fileOutpt(String path, String content) {
+    public static void fileOutput(String path, String content) {
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(path);
