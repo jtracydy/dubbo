@@ -33,7 +33,7 @@ public class GuavaTester {
             System.out.println(s);
         }
         System.out.println("]");
-        //display all the elements of the Demo01 using iterator
+        //display all the elements of the Demo01 using iterat
         Iterator<String> iterator  = multiset.iterator();
         System.out.println("MultiSet [");
         while(iterator.hasNext()){
