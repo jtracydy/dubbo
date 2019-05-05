@@ -1,7 +1,7 @@
 /*
 *  2019 
 */
-package arithematic.niuke;
+package arithematic.niuke.n1;
 
 import java.util.Stack;
 

@@ -43,6 +43,7 @@ public class Demo01 {
         t9.rNode = t11;
 
         level(t1);
+        level(t2);
     }
 
     public static void level(TreeNode treeNode) {

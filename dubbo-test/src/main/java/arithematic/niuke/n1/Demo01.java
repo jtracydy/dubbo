@@ -1,7 +1,7 @@
 /*
 *  2019 
 */
-package arithematic.niuke;
+package arithematic.niuke.n1;
 
 /**
  * @author wangdan Date: 2019/3/25 Time: 19:22

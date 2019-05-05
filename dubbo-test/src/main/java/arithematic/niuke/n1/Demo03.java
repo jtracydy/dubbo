@@ -1,7 +1,9 @@
 /*
 *  2019 
 */
-package arithematic.niuke;
+package arithematic.niuke.n1;
+
+import arithematic.niuke.ListNode;
 
 import java.util.ArrayList;
 

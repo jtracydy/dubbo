@@ -1,7 +1,9 @@
 /*
 *  2019 
 */
-package arithematic.niuke;
+package arithematic.niuke.n1;
+
+import arithematic.niuke.ListNode;
 
 /**
  * @author wangdan Date: 2019/3/26 Time: 19:52
