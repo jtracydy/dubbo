@@ -1,7 +1,7 @@
 /*
 *  2019 
 */
-package arithematic;
+package arithematic.test;
 
 /**
  * @author wangdan Date: 2019/5/3 Time: 12:15

@@ -1,7 +1,7 @@
 /*
 *  2019 
 */
-package arithematic;
+package arithematic.test;
 
 import java.util.HashMap;
 import java.util.Map;

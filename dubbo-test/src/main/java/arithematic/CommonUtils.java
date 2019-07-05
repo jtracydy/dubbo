@@ -32,4 +32,12 @@ public class CommonUtils {
             System.out.println(arr[i]);
         }
     }
+    public  void swap(char c[], int from, int to) {
+        if (from == to) {
+            return;
+        }
+        char temp = c[from];
+        c[from] = c[to];
+        c[to] = temp;
+    }
 }

@@ -25,7 +25,6 @@ public class Demo02 {
 
         System.out.println(System.currentTimeMillis() - start2);
 
-
     }
 
     public static long get() {
