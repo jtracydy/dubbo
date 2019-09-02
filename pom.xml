@@ -10,16 +10,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>dubbo-api</module>
-        <module>dubbo-app</module>
         <module>dubbo-provider</module>
-        <module>dubbo-consumer-1</module>
         <module>dubbo-consumer-2</module>
-        <module>dubbo-service</module>
         <module>dubbo-common</module>
-        <module>dubbo-domain</module>
         <module>dubbo-test</module>
         <module>dubbo-test-es</module>
-        <module>dubbo-spring</module>
     </modules>
 
     <properties>

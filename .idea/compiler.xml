@@ -7,14 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dubbo-api" />
-        <module name="dubbo-app" />
         <module name="dubbo-common" />
-        <module name="dubbo-consumer-1" />
         <module name="dubbo-consumer-2" />
-        <module name="dubbo-domain" />
         <module name="dubbo-provider" />
-        <module name="dubbo-service" />
-        <module name="dubbo-spring" />
         <module name="dubbo-test" />
         <module name="dubbo-test-es" />
       </profile>
