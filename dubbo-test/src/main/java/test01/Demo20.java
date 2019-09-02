@@ -15,5 +15,8 @@ public class Demo20 {
     public static void main(String[] args) {
         ConcurrentHashMap<String,String> concurrentHashMap = new ConcurrentHashMap();
         concurrentHashMap.put("1","1");
+
+
+        System.out.println(0x7fffffff);
     }
 }

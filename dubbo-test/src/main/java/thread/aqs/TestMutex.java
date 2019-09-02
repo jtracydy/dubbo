@@ -11,6 +11,7 @@ import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class TestMutex {
+
     private static CyclicBarrier barrier = new CyclicBarrier(31);
     private static int a = 0;
     private static AtomicInteger v = new AtomicInteger(0);
@@ -39,6 +40,7 @@ public class TestMutex {
         System.out.println(v);
         //加锁后
         barrier.reset();//重置CyclicBarrier
+
         a = 0;
         v = new AtomicInteger(0);
         for (int i = 0; i < 30; i++) {

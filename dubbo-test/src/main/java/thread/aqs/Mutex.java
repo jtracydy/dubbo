@@ -11,6 +11,7 @@ package thread.aqs;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 public class Mutex implements java.io.Serializable {
+
     /**
      * 静态内部类，继承AQS
      */
