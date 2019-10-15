@@ -45,5 +45,9 @@ public class Demo01 {
                 System.out.println(entry);
             }
         }
+
+        for (Map.Entry<Integer,Integer> entry:map.entrySet()){
+
+        }
     }
 }

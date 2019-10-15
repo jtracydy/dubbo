@@ -18,5 +18,8 @@ public class Demo20 {
 
 
         System.out.println(0x7fffffff);
+
+        concurrentHashMap.get("");
+        concurrentHashMap.putIfAbsent("","");
     }
 }

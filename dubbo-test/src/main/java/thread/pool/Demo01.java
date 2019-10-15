@@ -18,36 +18,41 @@ import java.util.concurrent.TimeUnit;
  */
 public class Demo01 {
 
-    public static void main(String[] args) {
-//        Executor executor = Executors.newFixedThreadPool(10);
+    public static void main(String[] args) throws InterruptedException {
 
         BlockingDeque<Runnable> blockingDeque = new LinkedBlockingDeque(5);
-        ThreadFactory factory = Executors.defaultThreadFactory();
         RejectedExecutionHandler handler = new ThreadPoolExecutor.DiscardOldestPolicy();
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5,10,10,
-                TimeUnit.SECONDS, blockingDeque,Executors.defaultThreadFactory(),handler);
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 5, 10,
+                TimeUnit.SECONDS, blockingDeque, Executors.defaultThreadFactory(), handler);
 
-        for (int i = 1; i <= 15 ; i++) {
-            System.out.println("size="+blockingDeque.size());
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("size=" + blockingDeque.size());
             threadPoolExecutor.execute(new MyThread(i));
         }
+        threadPoolExecutor.shutdown();
+
+        new Demo01().out();
+    }
+
+    private void out() {
+        System.out.println(this);
     }
 }
 
-class MyThread implements Runnable{
+class MyThread implements Runnable {
 
     private Integer id;
 
-    public MyThread(Integer id){
+    public MyThread(Integer id) {
         this.id = id;
     }
 
     @Override
     public void run() {
-        try{
-            System.out.println(id+"======"+Thread.currentThread().getName());
+        try {
+            System.out.println(id + "======" + Thread.currentThread().getName());
             Thread.sleep(4000);
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
 

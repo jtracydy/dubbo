@@ -33,6 +33,7 @@ public class Demo01Test {
                 }
             }).start();
         }
+        System.out.println(Thread.currentThread().getName());
         barrier.await();
         System.out.println(total);
 

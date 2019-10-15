@@ -70,9 +70,6 @@ public class Mutex implements java.io.Serializable {
         sync.acquire(1);
     }
 
-    public boolean tryLock() {
-        return sync.tryAcquire(1);
-    }
 
     /**
      * 释放锁，代理到release（模板方法）上就行，release会调用我们重写的tryRelease方法。
@@ -81,7 +78,4 @@ public class Mutex implements java.io.Serializable {
         sync.release(1);
     }
 
-    public boolean isLocked() {
-        return sync.isHeldExclusively();
-    }
 }
